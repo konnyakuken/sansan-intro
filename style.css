@@ -36,7 +36,7 @@ h3{
     text-align: center;
 }
 
-p{
+a,p{
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 24px;
 }
@@ -188,11 +188,54 @@ p{
 
 .gallery-text{
     width: 600px;
-    font-size:18px;
+    font-size:24px;
     line-height: 30px;
     letter-spacing: 0.1em;
     margin: 80px ;
 }
+
+.access-element{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.access-text{
+    width: 600px;
+    font-size:28px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin: 80px ;
+}
+
+iframe{
+    display: block;
+    margin: 60px auto;
+    max-width: 100%;
+  }
+
+.iframe-wrap{
+    margin-right: 60px;
+}
+
+.more{
+    text-align: center;
+    display: block;
+    margin: 16px auto;
+    width: 180px;
+    font-size: 16px;
+    color: #242424;
+    background-color: #EC9200;
+    text-decoration: none;
+
+    padding: 8px 0;
+    border-radius: 4px;
+  }
+  
+  .more:hover{/*カーソルを合わせた時*/
+    color: #fff;
+    
+  }
 
 
 .wrap{
