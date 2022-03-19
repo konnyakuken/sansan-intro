@@ -3,16 +3,120 @@
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src:  url('font/Mamelon-3-Hi-Regular.otf') format('opentype');
+    src: url('font/mameh_woff/Mamelon-3HiRegular.woff2') format('woff2');
 
 }
 
-body {
-    background-color: #5B80AA;
+.topic{
+    width: 490px;
+    border-bottom: solid 6px #EC9200;
+    margin-left: 80px;
+}
+
+h2{
+  font-family:'MyFont', sans-serif;
+  font-size: 56px;
+  margin: 40px 80px 0;
+}
+
+h3{
+    font-family:'MyFont', sans-serif;
+    font-size: 24px;
+    margin: 40px 80px 0;
+}
+
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 24px;
+}
+
+.title{
+    background: url(images/title.png) center center / cover no-repeat;
+}
+.title div{
+    width: 100%;
+    height: 100vh;
+}
+
+.intro{
+    display: flex;
+    position: relative;
+}
+
+.sansan-pop{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    width: 300px;
+    height: 320px;
+    background: url(images/sansan-taro/sansan_pop.png) no-repeat;
+    background-size: cover;
+}
+
+.intro-card{
+    display: flex;
+}
+.intro-img{
+    display: flex;
+}
+
+.block{
+    width: 200px;
+    height: 100px;
+}
+
+.intro-left{
+    background-image: url("images/intro_exterior.png");
+    background-size: cover;
+    width: 200px;
+    height: 400px;
+}
+
+.intro-right{
+    background-image: url("images/intro_exterior2.png");
+    background-size: cover;
+    width: 200px;
+    height: 400px;
+}
+
+
+
+.intro-text {
+    width: 580px;
+    font-size:24px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin: 80px 60px;
+  }
+
+.wrap{
+    background-color: #FFF9E1;
+}
+
+footer{
+    background-color: #EC9200;
+    color: #242424;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+
+    font-size: 20px;
 }
 
 label {
-    position: absolute;
+    position: fixed;
     z-index: 1;
+    
 }
 
 input {
@@ -30,16 +134,17 @@ input:checked ~ label {
 }
 
 .burger g {
-    stroke: #ffffff;
+    stroke: #242424;
     transition: stroke 0.25s ease-in-out;    
 }
 
 .burger g:hover {
-    stroke: darken(#ffffff, 20%);
+    stroke: darken(#242424, 20%);
 }
 
 input:checked ~ label .burger {
     opacity: 0;
+
 }
 
 
@@ -51,11 +156,11 @@ input:checked ~ label .burger {
 }
 
 .close g:hover {
-    stroke: darken(#ffffff, 20%);
+    stroke: darken(#242424, 20%);
 }
 
 .close g {
-    stroke: #ffffff;
+    stroke: #242424;
     transition: stroke 0.25s ease-in-out;    
 }
 
@@ -82,9 +187,9 @@ input:checked ~ label .close {
     opacity: 0;
     width: 100vw;
     height: 100vh;
-    background-color: tomato;
+    background-color: #FFF9E1;
     transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    color: #ffffff;
+    color: #242424;
     text-transform: uppercase;
     font-size: 24px;
     font-weight: bold;
@@ -113,12 +218,6 @@ input:checked ~ .menu div {
 .main span {
     margin: auto;
     font-size: 40px;
-    color: #ffffff;
+    color: #242424;
     font-family: 'Pacifico', cursive;    
 }
-
-
-a,p,h2{
-  font-family:'futura','メイリオ', 'Meiryo', sans-serif;
-}
-
