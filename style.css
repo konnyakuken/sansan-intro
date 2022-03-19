@@ -27,7 +27,13 @@ h2{
 h3{
     font-family:'MyFont', sans-serif;
     font-size: 24px;
-    margin: 40px 80px 0;
+
+    display: inline-block;
+    border-bottom: solid 4px #EC9200;
+}
+
+.column-wrap{
+    text-align: center;
 }
 
 p{
@@ -65,7 +71,7 @@ p{
     display: flex;
 }
 
-.block{
+.intro-block{
     width: 200px;
     height: 100px;
 }
@@ -75,6 +81,7 @@ p{
     background-size: cover;
     width: 200px;
     height: 400px;
+    margin-right: 20px;
 }
 
 .intro-right{
@@ -92,7 +99,101 @@ p{
     line-height: 30px;
     letter-spacing: 0.1em;
     margin: 80px 60px;
+}
+
+.up-column-card{
+    display: flex;
+    justify-content: center;
+}
+.down-column-card{
+    display: flex;
+    justify-content: center;
+}
+
+  .intro-under{
+    background-image: url("images/intro_under.png");
+    background-size: cover;
+    width: 500px;
+    height: 340px;
   }
+
+.column-text{
+    width: 420px;
+    font-size:18px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin: 50px 60px;
+}
+
+.red-char{
+    background-image: url("images/intro_char_red.png");
+    background-size: cover;
+    width: 450px;
+    height: 200px;
+}
+
+.blue-char{
+    background-image: url("images/intro_char_blue.png");
+    background-size: cover;
+    width: 450px;
+    height: 200px;
+    margin-bottom: 60px;
+}
+.column-block{
+    width: 100px;
+    height: 200px;
+}
+.upper-char-card{
+    display: flex;
+    margin-bottom: 60px;
+}
+.down-char-card{
+    display: flex;
+}
+
+.feature{
+    background-color: #FFF9F5;
+}
+
+.sansan-feature{
+    display: flex;
+    position: relative;
+}
+
+.sansan-hamburger{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    width: 260px;
+    height: 220px;
+    background: url(images/sansan-taro/sansan_hamburger.png) no-repeat;
+    background-size: cover;
+}
+
+
+.sansan-gallery{
+    display: flex;
+    position: relative;
+}
+
+.sansan-sit{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    width: 260px;
+    height: 460px;
+    background: url(images/sansan-taro/sansan_sit.png) no-repeat;
+    background-size: cover;
+}
+
+.gallery-text{
+    width: 600px;
+    font-size:18px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin: 80px ;
+}
+
 
 .wrap{
     background-color: #FFF9E1;
