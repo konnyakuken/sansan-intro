@@ -69,6 +69,8 @@ a,p{
 }
 .intro-img{
     display: flex;
+
+    position: relative;
 }
 
 .intro-block{
@@ -89,6 +91,8 @@ a,p{
     background-size: cover;
     width: 200px;
     height: 400px;
+    position: relative;
+    top: 100px;
 }
 
 
@@ -103,11 +107,11 @@ a,p{
 
 .up-column-card{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .down-column-card{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
   .intro-under{
@@ -170,11 +174,200 @@ a,p{
     background-size: cover;
 }
 
+span {
+    background:linear-gradient(transparent 60%, #EC9200 50%);
+}
+
+.feature-projection{
+    display: flex;
+}
+
+.sansan-projection-element{
+    display: flex;
+    margin: 30px;
+}
+
+.sansan-projection{
+    width: 330px;
+    height: 440px;
+    background: url(images/sansan_projection.jpg) no-repeat;
+    background-size: cover;
+    margin: 80px;
+}
+
+.sansan-projection2{
+    width: 250px;
+    height: 400px;
+    background: url(images/sansan_projection2.jpg) no-repeat;
+    background-size: cover;
+    
+
+}
+.sansan-projection3{
+    width: 300px;
+    height: 200px;
+    background: url(images/sansan_projection3.jpg) no-repeat;
+    background-size: cover;
+    display: inline-block;
+    text-align: right;
+}
+
+.feature-text{
+    width: 450px;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin: 80px;
+}
+.sansan-speaker-element{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sansan-speaker{
+    width: 450px;
+    height: 300px;
+    background: url(images/sansan_speaker.png) no-repeat;
+    background-size: cover;
+    margin: 80px;
+}
+
+.sansan-cardboard-element{
+    display: flex;
+    text-align: center;
+}
+
+.sansan-cardboard{
+    width: 500px;
+    height: 375px;
+    background: url(images/sansan_cardboard.jpg) no-repeat;
+    background-size: cover;
+    margin: 80px;
+}
+.cardboard-text{
+    width: 450px;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin: 80px;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.gallery-topic{
+    width: 600px;
+    font-size:24px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin: 80px ;
+}
 
 .sansan-gallery{
     display: flex;
     position: relative;
 }
+
+.gallery-card{
+    width: 250px;
+    height: 320px;
+    background-color: #EC9200;
+    border: solid 3px #fff;
+    border-radius: 8px;
+    outline : 3px solid #FFF; /* 線の太さ・線状・色 */
+    outline-offset : -10px; /* どれだけ内側に線を表示したいかを負の値で指定 */
+    box-shadow: 10px 10px rgba(138, 65, 13, 0.7);
+    margin: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.gallery-card:nth-child(4n+2){
+    top:50px; 
+  }
+.gallery-card:nth-child(4n+3){
+    top:100px; 
+}
+.gallery-card:nth-child(4n+4){
+    top:150px; 
+}
+
+
+.all-gallery-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.down-gallery-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-number{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: #fff;
+    font-family:'MyFont', sans-serif;
+    font-size: 48px;
+}
+
+.sansan-theatre{
+    width: 200px;
+    height: 130px;
+    margin: 0 auto;
+}
+.gallery-text{
+    background-color: #fff;
+    border-radius: 8px;
+    width: 200px;
+    height: 120px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.gallery-text p{
+    display: inline-block;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.gallery11{
+    background: url(images/gallery/theater1_02.jpg) no-repeat;
+    background-size: cover;
+}
+.gallery12{
+    background: url(images/gallery/theater1_03.jpg) no-repeat;
+    background-size: cover;
+}
+.gallery21{
+    background: url(images/gallery/theater2_02.jpg) no-repeat;
+    background-size: cover;
+}
+.gallery22{
+    background: url(images/gallery/theater2_03.jpg) no-repeat;
+    background-size: cover;
+}
+.gallery31{
+    background: url(images/gallery/theater3_02.jpg) no-repeat;
+    background-size: cover;
+}
+.gallery32{
+    background: url(images/gallery/theater3_03.jpg) no-repeat;
+    background-size: cover;
+}
+.gallery41{
+    background: url(images/gallery/theater4_02.jpg) no-repeat;
+    background-size: cover;
+}
+.gallery42{
+    background: url(images/gallery/theater4_03.jpg) no-repeat;
+    background-size: cover;
+}
+
 
 .sansan-sit{
     position: absolute;
@@ -186,18 +379,11 @@ a,p{
     background-size: cover;
 }
 
-.gallery-text{
-    width: 600px;
-    font-size:24px;
-    line-height: 30px;
-    letter-spacing: 0.1em;
-    margin: 80px ;
-}
 
 .access-element{
     display: flex;
     justify-content: center;
-    margin: 100px 0;
+    margin: 30px 0;
 }
 
 .access-text{
@@ -218,18 +404,41 @@ iframe{
     margin-right: 60px;
 }
 
+.more-area{
+    /*position: relative;*/
+    display: flex;
+    justify-content: space-around;
+}
+.sansan-open{
+    /*position: absolute;
+    right: 60px;
+    bottom:0px;*/
+    right: 60px;
+    width: 260px;
+    height: 240px;
+    background: url(images/sansan-taro/sansan_open.png) no-repeat;
+    background-size: cover;
+}
+.more-block{
+    width: 260px;
+    height: 240px;
+}
+
 .more{
+    align-self: flex-start;
     text-align: center;
     display: block;
-    margin: 16px auto;
-    width: 180px;
-    font-size: 16px;
+    margin: 20px auto 60px;
+    width: 240px;
+    font-size: 32px;
     color: #242424;
     background-color: #EC9200;
+    border-radius: 8px;
     text-decoration: none;
-
-    padding: 8px 0;
+    padding: 16px 0;
     border-radius: 4px;
+    outline : 2px solid #FFF; /* 線の太さ・線状・色 */
+    outline-offset : -7px /* どれだけ内側に線を表示したいかを負の値で指定 */
   }
   
   .more:hover{/*カーソルを合わせた時*/
