@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    color: #333;
 }
 
 @font-face {
@@ -39,7 +40,11 @@ h3{
 
 }
 
-a,p{
+a{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 24px;
+}
+p{
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 24px;
 }
@@ -51,6 +56,22 @@ a,p{
     width: 100%;
     height: 100vh;
 }
+
+@media screen and (max-width: 780px){
+    .title{
+        background: url(images/sp/title.png) center center / cover no-repeat;
+    }
+    h2{
+        font-family:'MyFont', sans-serif;
+        font-size: 24px;
+        margin: 5px 10px 0;
+      }
+      .topic{
+        width: 210px;
+        border-bottom: solid 3px #EC9200;
+        margin-left: 10px;
+    }
+  }
 
 .intro{
     display: flex;
@@ -78,7 +99,17 @@ a,p{
     right: 80px;
 }
 
-
+@media screen and (max-width: 780px){
+    .sansan-pop{
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        width: 23vw;
+        height: 14vh;
+        background: url(images/sansan-taro/sansan_pop.png) no-repeat;
+        background-size: cover;
+    }
+  }
 
 .intro-left{
     background-image: url("images/intro_exterior.png");
@@ -108,6 +139,40 @@ a,p{
     letter-spacing: 0.1em;
     margin: 80px 60px;
 }
+
+
+@media screen and (max-width: 780px){
+    .intro-text {
+        width: 200px;
+        font-size:12px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        margin: 60px 20px;
+    }
+
+    .intro-card{
+        display: flex;
+        position: relative;
+    }
+
+    .intro-left{
+        background-image: url("images/intro_exterior.png");
+        background-size: cover;
+        width: 150px;
+        height: 300px;
+        margin-right: 10px;
+    }
+    
+    .intro-right{
+        background-image: none;
+        background-size: cover;
+        width: 200px;
+        height: 400px;
+        position: relative;
+        top: 100px;
+    }
+  }
+
 
 .up-column-card{
     display: flex;
@@ -166,6 +231,36 @@ a,p{
     display: flex;
 }
 
+@media screen and (max-width: 780px){
+
+    p{
+        font-size:12px;
+    }
+
+    .intro-under{
+        width: 170px;
+        height: 100px;
+      }
+
+      .column-text{
+        width: 200px;
+        font-size:12px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        margin: 10px 20px;
+        display: inline-block;
+        text-align: left;
+    }
+    h3{
+        font-family:'MyFont', sans-serif;
+        font-size: 16px;
+    
+        display: inline-block;
+        border-bottom: solid 2px #EC9200;
+    }
+
+}
+
 .feature{
     background-color: #FFF9F5;
 }
@@ -191,30 +286,33 @@ span {
 
 .feature-projection{
     display: flex;
+    position: relative;
 }
 
 .sansan-projection-element{
     display: flex;
     margin: 30px;
-    position: relative;
-    width: 100%;
+    position: absolute;
+    right: 0;
 }
 
 .sansan-projection{
-    width: 330px;
-    height: 440px;
+    width: 420px;
+    height: 560px;
     background: url(images/sansan_projection.jpg) no-repeat;
     background-size: cover;
     margin: 80px;
 }
 
 .sansan-projection2{
-    width: 200px;
-    height: 300px;
+    width: 260px;
+    height: 390px;
     background: url(images/sansan_projection2.jpg) no-repeat;
     background-size: cover;
     position: relative;
-    right: 50px;
+    bottom: 20px;
+    right: 100px;
+    
 
 }
 .sansan-projection3{
@@ -222,13 +320,14 @@ span {
     height: 270px;
     background: url(images/sansan_projection3.jpg) no-repeat;
     background-size: cover;
-    display: inline-block;
-    margin: 0 0 0 auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 50px;
 }
 
 .feature-text{
     width: 450px;
-    font-size: 24px;
+
     line-height: 30px;
     letter-spacing: 0.1em;
     margin: 80px;
@@ -241,15 +340,15 @@ span {
 
 .speaker-text{
     width: 450px;
-    font-size: 24px;
+
     line-height: 30px;
     letter-spacing: 0.1em;
     margin: 0 80px;
 }
 
 .sansan-speaker{
-    width: 450px;
-    height: 300px;
+    width: 510px;
+    height: 340px;
     background: url(images/sansan_speaker.png) no-repeat;
     background-size: cover;
     margin: 0 80px;
@@ -271,7 +370,7 @@ span {
 }
 .cardboard-text{
     width: 450px;
-    font-size: 24px;
+
     line-height: 30px;
     letter-spacing: 0.1em;
     margin: 80px;
@@ -285,7 +384,7 @@ span {
 
 .event-text{
     width: 700px;
-    font-size: 24px;
+
     line-height: 30px;
     letter-spacing: 0.1em;
     margin: 80px;
@@ -369,6 +468,7 @@ span {
     margin: 0 auto;
 }
 .gallery-text{
+
     background-color: #fff;
     border-radius: 8px;
     width: 200px;
@@ -479,7 +579,7 @@ iframe{
     margin: 20px auto 60px;
     width: 240px;
     font-size: 32px;
-    color: #242424;
+    color: #333;
     background-color: #EC9200;
     border-radius: 8px;
     text-decoration: none;
@@ -501,7 +601,7 @@ iframe{
 
 footer{
     background-color: #EC9200;
-    color: #242424;
+    color: #333;
     width: 100%;
     height: 60px;
     bottom: 0;
@@ -574,7 +674,7 @@ footer p{
   .hamburger.active span:nth-child(1) {
     top : 16px;
     left: 6px;
-    background :#242424;
+    background :#333;
     -webkit-transform: rotate(-45deg);
     -moz-transform   : rotate(-45deg);
     transform        : rotate(-45deg);
@@ -583,7 +683,7 @@ footer p{
   .hamburger.active span:nth-child(2),
   .hamburger.active span:nth-child(3) {
     top: 16px;
-    background :#242424;
+    background :#333;
     -webkit-transform: rotate(45deg);
     -moz-transform   : rotate(45deg);
     transform        : rotate(45deg);
@@ -626,7 +726,7 @@ footer p{
   nav.globalMenuSp ul li a {
     font-size: 36px;
     display: block;
-    color: #242424;
+    color: #333;
     padding: 0.5em 0;
     text-decoration :none;
   }
@@ -651,3 +751,22 @@ footer p{
 .menu-off{
     pointer-events: none;
 }
+
+@media screen and (max-width: 780px){
+    .sansan-rat{
+        width: 180px;
+        height: 160px;
+        background: url(images/sansan-taro/sansan_rat.png) no-repeat;
+        background-size: cover;
+        position: static;
+        margin: 80px auto;
+    }
+
+    nav.globalMenuSp ul li a {
+        font-size: 24px;
+        display: block;
+        color: #333;
+        padding: 0.5em 0;
+        text-decoration :none;
+      }
+  }
