@@ -254,6 +254,27 @@ span {
     text-align: left;
 }
 
+.sansan-event-element{
+    display: flex;
+}
+
+.event-text{
+    width: 700px;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin: 80px;
+    position: relative;
+    top: 50px;
+}
+.sansan-event{
+    width: 300px;
+    height: 600px;
+    background: url(images/sansan_masara.png) no-repeat;
+    background-size: cover;
+    margin: 80px;
+
+}
 
 .gallery-topic{
     width: 600px;
@@ -466,111 +487,140 @@ footer p{
     font-size: 20px;
 }
 
-label {
+
+
+.fuwatAnime {
+    -webkit-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:1.5s;
+    -ms-animation-duration:1.5s;
+    animation-duration:1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+   }
+   @-webkit-keyframes fuwatAnime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+   }
+   @keyframes fuwatAnime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+   }
+
+   /*　ハンバーガーボタン　*/
+.hamburger {
+    display : block;
     position: fixed;
-    z-index: 1;
-    
-}
-
-input {
-    display: none;
-}
-
-input:checked ~ label {
-    right: 0;
-}
-
-.burger {
-    position: relative;
-    top: 24px;
+    z-index : 3;
+    right : 13px;
+    top   : 12px;
+    width : 42px;
+    height: 42px;
     cursor: pointer;
-}
-
-.burger g {
-    stroke: #242424;
-    transition: stroke 0.25s ease-in-out;    
-}
-
-.burger g:hover {
-    stroke: darken(#242424, 20%);
-}
-
-input:checked ~ label .burger {
-    opacity: 0;
-
-}
-
-
-.close {
-    position: relative;
-    top: 24px;
-    cursor: pointer;
-    opacity: 0;
-}
-
-.close g:hover {
-    stroke: darken(#242424, 20%);
-}
-
-.close g {
-    stroke: #242424;
-    transition: stroke 0.25s ease-in-out;    
-}
-
-.close line {
-    transform-origin: 0%;
-}
-
-.close g {
-    transform: rotateZ(45deg);
-    transform-origin: 50%;
-}
-
-input:checked ~ label .close {
-    opacity: 1;
-}
-
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    text-align: center;
+  }
+  .hamburger span {
+    display : block;
     position: absolute;
+    width   : 30px;
+    height  : 2px ;
+    left    : 6px;
+    background : #555;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 16px;
+    left: 6px;
+    background :#242424;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+  
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 16px;
+    background :#242424;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+  
+  nav.globalMenuSp {
+    position: fixed;
+    z-index : 2;
+    top  : 0;
+    left : 0;
+    color: #242424;
+    background: #FFF9E1;
+    text-align: center;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #FFF9E1;
-    transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    color: #242424;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-input:checked ~ .menu {
-    opacity: 1;
-}
-
-.menu div {
-    margin-top: 50px;
-    transition: margin 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-input:checked ~ .menu div {
-    margin-top: 0px;
-}
-
-.main {
-    display: flex;
-    width: 100vw;
-    height: 100vh;    
-}
-
-.main span {
+    visibility: hidden;
+    transition: opacity .6s ease, visibility .6s ease;
+  }
+  
+  nav.globalMenuSp ul {
     margin: auto;
-    font-size: 40px;
+    padding: 0;
+    width: 100%;
+  }
+  
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: .4s all;
+  }
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+  }
+  nav.globalMenuSp ul li:hover{
+    background :rgba(236,146,0,0.4);;
+  }
+  
+  nav.globalMenuSp ul li a {
+    font-size: 36px;
+    display: block;
     color: #242424;
-    font-family: 'Pacifico', cursive;    
+    padding: 0.5em 0;
+    text-decoration :none;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    opacity: 100;
+    visibility: visible;
+
+  }
+.sansan-rat{
+    top:100px;
+    left : 40px;
+    width: 270px;
+    height: 240px;
+    background: url(images/sansan-taro/sansan_rat.png) no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.menu-off{
+    pointer-events: none;
 }

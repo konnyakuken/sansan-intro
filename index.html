@@ -19,33 +19,23 @@
     </head>
     <body>
         <div class="wrap">
-            <header><!--
-                <input id="test" type="checkbox" />
-                <label for="test">
-                    <svg class="burger" width="86" height="60" viewbox="0 0 150 150">
-                        <g stroke-width="12">   
-                            <line x1="6" y1="6" x2="80" y2="6"></line>
-                            <line x1="6" y1="28" x2="80" y2="28"></line>
-                            <line x1="6" y1="50" x2="80" y2="50"> </line>
-                        </g>
-                    </svg>
-                    <svg class="close" width="86" height="60" viewbox="0 0 150 150">
-                        <g stroke-width="12">   
-                            <line x1="42" y1="6" x2="42" y2="80"></line>
-                            <line x1="6" y1="42" x2="80" y2="42"></line>
-                        </g>
-                    </svg>
-                </label>
-                <div class="menu">
-                    <div>Home</div>
-                    <div>About</div>
-                    <div>Hello</div>
-                    <div>Contact</div>
-                </div>
-
-                <span class="main">
-                    <span>Pure CSS Menu</span>
-                </span>-->
+            <header class="hamburger-off">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  
+                  <nav class="globalMenuSp">
+                      <ul>
+                          <li><a href="#top">Top</a></li>
+                          <li><a href="#overview">塚口サンサン劇場とは</a></li>
+                          <li><a href="#feature">サンサンの特色</a></li>
+                          <li><a href="#gallery">シアターギャラリー</a></li>
+                          <li><a href="#access">アクセス</a></li>
+                      </ul>
+                      <div class="sansan-rat"></div>
+                  </nav>
             </header>
             <section class="title" id="top">
                 <div>
@@ -66,19 +56,19 @@
                         シアターの数は4つと少ないですが、1年を通して300作品を超える数が上映されています。<br><br>
                         また、二番館でもあるので過去の名作のリバイバル上映もされています。
                     </p>
-                    <div class="intro-img">
+                    <div class="intro-img ">
                         <div class="intro-left">
-                            <div class="exterior-left"></div>
+                            <div class="exterior-left fuwat"></div>
                             <div class="intro-block"></div>
                         </div>
                         <div class="intro-right">
                             <div class="block"></div>
-                            <div class="exterior-right"></div>
+                            <div class="exterior-right fuwat"></div>
                         </div>
                     </div>
                 </div>
                 <div class="up-column-card">
-                    <div class="intro-under"></div>
+                    <div class="intro-under fuwat"></div>
                     <div class="column-wrap">
                         <h3>ミニシアター</h3>
                         <div class="column"></div>
@@ -102,17 +92,17 @@
                     </div>
                     <div class="char">
                         <div class="upper-char-card">
-                            <div class="red-char"></div>
+                            <div class="red-char fuwat"></div>
                             <div class="column-block"></div>
                         </div>
                         <div class="down-char-card">
                             <div class="column-block"></div>
-                            <div class="blue-char"></div>
+                            <div class="blue-char fuwat"></div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="feature" id="feature">
+            <section class="feature " id="feature">
                 <div class="sansan-feature">
                     <div>
                         <h2>サンサン劇場の特色</h2>
@@ -122,33 +112,41 @@
                     <div class="sansan-hamburger"></div>
                 </div>
                 <div class="feature-projection">
-                    <div class="sansan-projection"></div>
+                    <div class="sansan-projection fuwat"></div>
                     <div>
                         <p class="feature-text">サンサン劇場では、今となっては<br>
                             珍しい<span>フィルム(35mmフィルム)</span>の上映もおこなわれています。<br>
                             フィルム上映ならではの質感や雰囲気が味わえるのが魅力です。
                         </p>
                         <div class="sansan-projection-element">
-                            <div class="sansan-projection2"></div>
-                            <div class="sansan-projection3"></div>
+                            <div class="sansan-projection2 fuwat"></div>
+                            <div class="sansan-projection3 fuwat"></div>
                         </div>
                     </div>
                     
                 </div>
-                <div class="sansan-speaker-element">
+                <div class="sansan-speaker-element ">
                     <p class="feature-text">もちろん映画を鑑賞するうえで大切な<span>音響設備</span>も充実してます。<br><br>
                         通常だと350席を超えるシアターに採用されるスピーカーが、155席の大きさのシアターに置かれています。<br>
                         そのため、大迫力で臨場感のある音を感じる事が出来ます。
                     </p>
-                    <div class="sansan-speaker"></div>
+                    <div class="sansan-speaker fuwat" ></div>
                 </div>
                 <div class="sansan-cardboard-element">
-                    <div class="sansan-cardboard"></div>
+                    <div class="sansan-cardboard fuwat"></div>
                     <p class="cardboard-text">地下1階にある待合室では、現在上映
                         されている作品に沿った装飾が施された待合室になっています。<br><br>
                         特に、一部の作品では<span>ダンボール</span>で制作された展示物があります。<br>
                         映画を鑑賞する前からその世界に入り込むことが出来ます。<br>
                     </p>
+                </div>
+                <div class="sansan-event-element">
+                    
+                    <p class="event-text">また、サンサン劇場では様々な<br><span>イベント上映</span>も定期的に開催されています。<br>
+                        具体的には、ペンライトを振り声を出して<br>盛り上げる「応援上映」や、クラッカーや<br>紙吹雪で映画を盛り上げる「マサラ上映」があります。<br><br>
+                        他の観客と一緒に映画を盛り上げるので、<br>普段映画館で映画を観るのとはまた違った楽しさを味わう事が出来ます。
+                    </p>
+                    <div class="sansan-event fuwat"></div>
                 </div>
 
             </section>
@@ -168,7 +166,7 @@
                     それを紹介していきます。
                 </p>
                 <div class="all-gallery-card">
-                    <div class="gallery-card card01">
+                    <div class="gallery-card card01 fuwat">
                         <div class="sansan-theatre gallery11">
                         </div>
                         <div class="gallery-text">
@@ -176,7 +174,7 @@
                         </div>
                         <p class="gallery-number">01</p>
                     </div>
-                    <div class="gallery-card card01">
+                    <div class="gallery-card card01 fuwat">
                         <div class="sansan-theatre gallery12">
                         </div>
                         <div class="gallery-text">
@@ -184,7 +182,7 @@
                         </div>
                         <p class="gallery-number">01</p>
                     </div>
-                    <div class="gallery-card card02">
+                    <div class="gallery-card card02 fuwat">
                         <div class="sansan-theatre gallery21">
                         </div>
                         <div class="gallery-text">
@@ -192,7 +190,7 @@
                         </div>
                         <p class="gallery-number">02</p>
                     </div>
-                    <div class="gallery-card card01">
+                    <div class="gallery-card card02 fuwat">
                         <div class="sansan-theatre gallery22">
                         </div>
                         <div class="gallery-text">
@@ -201,7 +199,7 @@
                         <p class="gallery-number">02</p>
                     </div>
 
-                    <div class="gallery-card card03">
+                    <div class="gallery-card card03 fuwat">
                         <div class="sansan-theatre gallery31">
                         </div>
                         <div class="gallery-text">
@@ -209,7 +207,7 @@
                         </div>
                         <p class="gallery-number">03</p>
                     </div>
-                    <div class="gallery-card card03">
+                    <div class="gallery-card card03 fuwat">
                         <div class="sansan-theatre gallery32">
                         </div>
                         <div class="gallery-text">
@@ -217,7 +215,7 @@
                         </div>
                         <p class="gallery-number">03</p>
                     </div>
-                    <div class="gallery-card card04">
+                    <div class="gallery-card card04 fuwat">
                         <div class="sansan-theatre gallery41">
                         </div>
                         <div class="gallery-text">
@@ -225,7 +223,7 @@
                         </div>
                         <p class="gallery-number">04</p>
                     </div>
-                    <div class="gallery-card card04">
+                    <div class="gallery-card card04 fuwat">
                         <div class="sansan-theatre gallery42">
                         </div>
                         <div class="gallery-text">
@@ -267,6 +265,8 @@
                 <p>© 2022 wakamiya takuya</p>
             </footer>
         </div>
+        <script src="js/hamberger.js"></script>
+        <script src="js/fade.js"></script>
     </body>
         
 </html>

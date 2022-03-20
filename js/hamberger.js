@@ -1,6 +1,17 @@
-$(function(){
-    $('.menu-trigger').on('click', function() {
+$(function() {
+  $('.hamburger').click(function() {
       $(this).toggleClass('active');
-      return false;
-    });
+
+      if ($(this).hasClass('active')) {
+          $('.globalMenuSp').addClass('active');
+      } else {
+          $('.globalMenuSp').removeClass('active');
+      }
   });
+
+  $("a").click(function(){
+    $('.globalMenuSp').removeClass('active');
+    $('.hamburger').removeClass('active');
+  });
+  
+});
